@@ -37,7 +37,27 @@ select {
     border: 1px solid #ccc;
     border-radius: 4px;
     transition: border-color 0.3s ease;
+    border-radius: 19px;
 }
+
+
+.designation {
+    width: 29%;
+}
+
+.START-TIME,
+.END-TIME,
+.DATE {
+    width: 29%;
+}
+
+
+
+
+
+
+
+
 
 input:focus,
 select:focus {
@@ -83,4 +103,38 @@ li {
     form {
         grid-template-columns: 1fr;
     }
+}
+
+
+/* ******************** css  command  to  make  devigion left*************** */
+.div-left {
+    display: flex;
+
+
+}
+
+.flex-right-2times {
+
+    flex: 2;
+    padding-left: 6%;
+}
+
+.button-left {
+    width: 40%;
+    border-radius: 19px;
+}
+
+.subdevigion-heading-2 {
+
+    height: 20%;
+}
+
+.headingdevigion {
+
+    width: calc(99% - 10px);
+    max-width: 2950px;
+    background-color: aqua;
+    padding-left: 5px;
+    margin-right: 5px;
+
 }

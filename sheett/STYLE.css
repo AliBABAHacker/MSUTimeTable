@@ -1,0 +1,270 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f7f7f7;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* Aligns items in the center horizontally */
+}
+
+h1 {body {
+        font-family: 'Arial', sans-serif;
+        background-color: #f7f7f7;
+        margin: 0;
+        padding: 0;
+    }
+
+    .container {
+        max-width: 600px;
+        margin: 50px auto;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+        text-align: center;
+        color: #333;
+    }
+
+    form {
+        display: grid;
+        gap: 15px;
+    }
+
+    label {
+        font-weight: bold;
+        color: #555;
+    }
+
+    input,
+    select {
+        width: 100%;
+        padding: 10px;
+        box-sizing: border-box;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        transition: border-color 0.3s ease;
+        border-radius: 19px;
+    }
+
+
+    .designation {
+        width: 29%;
+    }
+
+    .START-TIME,
+    .END-TIME,
+    .DATE {
+        width: 29%;
+    }
+
+
+
+
+
+
+
+
+
+    input:focus,
+    select:focus {
+        border-color: #4caf50;
+    }
+
+    button {
+        background-color: #4caf50;
+        color: #fff;
+        padding: 12px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+        background-color: #45a049;
+    }
+
+    #activityList {
+        margin-top: 20px;
+    }
+
+    h2 {
+        color: #333;
+        border-bottom: 1px solid #ddd;
+        padding-bottom: 5px;
+    }
+
+    ul {
+        list-style-type: none;
+        padding: 0;
+    }
+
+    li {
+        margin-bottom: 10px;
+        border-bottom: 1px solid #eee;
+        padding-bottom: 5px;
+    }
+
+    @media screen and (max-width: 600px) {
+        form {
+            grid-template-columns: 1fr;
+        }
+    }
+
+
+    /* ******************** css  command  to  make  devigion left*************** */
+    .div-left {
+        display: flex;
+
+
+    }
+
+    .flex-right-2times {
+
+        flex: 2;
+        padding-left: 6%;
+    }
+
+    .button-left {
+        width: 40%;
+        border-radius: 19px;
+    }
+
+    .subdevigion-heading-2 {
+
+        height: 20%;
+    }
+
+    .headingdevigion {
+
+        width: calc(99% - 10px);
+        max-width: 2950px;
+        background-color: aqua;
+        padding-left: 5px;
+        margin-right: 5px;
+
+    }
+    text-align: center;
+    color: #333;
+}
+
+form {
+    display: grid;
+    gap: 15px;
+    width: 100%;
+    /* Make form occupy full width */
+}
+
+label {
+    font-weight: bold;
+    color: #555;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: border-color 0.3s ease;
+}
+
+.designation {
+    width: 100%;
+    /* Make designation input occupy full width */
+}
+
+.START-TIME,
+.END-TIME,
+.DATE {
+    width: 100%;
+    /* Make time and date inputs occupy full width */
+}
+
+input:focus,
+select:focus {
+    border-color: #4caf50;
+}
+
+button {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#activityList {
+    margin-top: 20px;
+}
+
+h2 {
+    color: #333;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 5px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 5px;
+}
+
+@media screen and (max-width: 600px) {
+    form {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Additional styles for responsiveness and heading width */
+.div-left {
+    display: flex;
+}
+
+.flex-right-2times {
+    flex: 2;
+    padding-left: 6%;
+}
+
+.button-left {
+    width: 40%;
+    border-radius: 19px;
+}
+
+.subdevigion-heading-2 {
+    height: 20%;
+}
+
+.headingdevigion {
+    width: calc(97% - 10px);
+    max-width: 2950px;
+    background-color: aqua;
+    padding-left: 5px;
+    margin-right: 5px;
+}

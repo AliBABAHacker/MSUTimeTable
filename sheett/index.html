@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Activity Recorder</title>
+    <link rel="stylesheet" href="STYLE.css">
+
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f7f7f7;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        form {
+            display: grid;
+            gap: 15px;
+        }
+
+        label {
+            font-weight: bold;
+            color: #555;
+        }
+
+        input,
+        select {
+            width: 100%;
+            padding: 10px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            transition: border-color 0.3s ease;
+            border-radius: 19px;
+        }
+
+        .designation {
+            width: 29%;
+        }
+
+        .START-TIME,
+        .END-TIME,
+        .DATE {
+            width: 29%;
+        }
+
+        input:focus,
+        select:focus {
+            border-color: #4caf50;
+        }
+
+        button {
+            background-color: #4caf50;
+            color: #fff;
+            padding: 12px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        #activityList {
+            margin-top: 20px;
+        }
+
+        h2 {
+            color: #333;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 5px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 10px;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 5px;
+        }
+
+        @media screen and (max-width: 600px) {
+            form {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* Additional styles for responsiveness and heading width */
+        .div-left {
+            display: flex;
+        }
+
+        .flex-right-2times {
+            flex: 2;
+            padding-left: 6%;
+        }
+
+        .button-left {
+            width: 40%;
+            border-radius: 19px;
+        }
+
+        .subdevigion-heading-2 {
+            height: 20%;
+        }
+
+        .headingdevigion {
+            width: calc(97% - 10px);
+            max-width: 2950px;
+            background-color: aqua;
+            padding-left: 5px;
+            margin-right: 5px;
+        }
+    </style>
+</head>
+
+<body>hgfhgfh
+
+    <header>
+        <!-- Main Division -->
+        <div class="container m-3 headingdevigion">
+            <!-- Top Sub-Division -->
+            <div class="row">
+                <div class="col-12 text-center bg-info p-2 m-0">
+                    <img src="LAKA.jpg" style="float: left; height:20px; width: 30px;">
+                    <p>Top Sub-Division Content</p>
+                </div>
+            </div>
+
+            <!-- Bottom Sub-Division -->
+            <div class="row">
+                <div class="col-12 text-center bg-warning p-2 subdevigion-heading-2">
+                    <p>Bottom Sub-Division Content</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <body>
+
+        <div class="div-left">
+            <div class="container">
+
+                <form id="activityForm">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="vertical">Vertical:</label>
+                    <select id="vertical" name="vertical">
+                        <option value="singtam">Singtam Campus</option>
+                        <option value="bermiok">Bermiok Campus</option>
+
+                    </select>
+
+                    <label for="schoolOrLocation">School Or Location:</label>
+
+
+
+                    <select id="vertical" name="vertical">
+                        <option value="singtam">School of Education , Humanities and Applied Arts</option>
+                        <option value="bermiok"> School of Information and Communication Technology</option>
+                        <option value="bermiok">School of Management and Commerce </option>
+                        <option value="bermiok">School of Hospitality and Culinary Arts</option>
+                        <option value="bermiok">School of Healthcare and Allied Science </option>
+                        <option value="bermiok">School of Education, Humanities and Applied Arts</option>
+                        <option value="bermiok">Administration</option>
+                    </select>
+
+
+
+
+                    <label for="designation">Designation:</label>
+                    <input class="designation" type="text" id="designation" name="designation" required>
+
+
+                    <label for="category">category</label>
+
+
+                    <select id="vertical" name="vertical">
+                        <option value="singtam">Teaching</option>
+                        <option value="bermiok"> Administration</option>
+                        <option value="bermiok">Teaching + Administration</option>
+                        <option value="bermiok">Marketing + Admission</option>
+
+                    </select>
+
+                    <label for="date">Date:</label>
+                    <input class="DATE" type="date" id="date" name="date" required>
+
+
+
+                    <label for="startTime">Start Time:</label>
+                    <input class="START-TIME" type="time" id="startTime" name="startTime" required>
+
+                    <label for="endTime">End Time:</label>
+                    <input class="END-TIME" type="time" id="endTime" name="endTime" required>
+
+                    <label for="engagementType">Engagement Type:</label>
+                    <select id="vertical" name="vertical">
+                        <option value="singtam">Teaching</option>
+                        <option value="bermiok"> Class Preparation</option>
+                        <option value="bermiok">Content Creation</option>
+                        <option value="bermiok">Upskilling or Reskilling</option>
+                        <option value="bermiok">Mentoring</option>
+                        <option value="bermiok">Reasearch and Development</option>
+                        <option value="bermiok">Others</option>
+
+                    </select>
+
+
+
+
+                    <button type="button" onclick="recordActivity()">Record Task</button>
+                </form>
+
+
+            </div>
+
+            <div class="flex-right-2times">
+
+                <form> <label for="date">From Date:</label>
+                    <input class="DATE" type="date" id="date" name="date" required>
+
+                    <label for="date"> To Date:</label>
+                    <input class="DATE" type="date" id="date" name="date" required>
+
+
+                    <button type="button button-left " style="width: 40%;" onclick="recordActivity()">Record
+                        Activity</button>
+                </form>
+            </div>
+
+
+
+        </div>
+
+
+    </body>
+        
+        
+
+</html>
